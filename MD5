@@ -1,0 +1,16 @@
+b14e6c67099a4026627abb6ed2d511f9 *DESCRIPTION
+6decff0ca0b506b9b7a5f54ac3d286f8 *LICENSE
+81c7a359afe8fe0e73c1ab6114e0c8f2 *NAMESPACE
+a15e8bdce2e58eccfbd67efb761a65fa *R/BASSgeneralized.R
+14cc8840c3a2c0a5bb5a1d775aca10a5 *R/BASSplot.R
+618f0e26cb8327ff6b6af49dcc002deb *R/BASSstandard.R
+c23a2750f00a30c1594191554e781e57 *R/BASSstandardgenerator.R
+e3f027c30aeba4465794b2edcbab2d2b *R/GGmodel.R
+3af1f47069747ebe34b9b26c27dbf096 *R/makeinstantaneous.R
+129a7f2cd14262a51cf468bffe71b4f8 *README.md
+32e57079ebeb81f2595b545668a50d24 *man/BASSGeneralized.Rd
+8b7cd3de853e01b593e84e69d6dbe26c *man/BASSStandard.Rd
+30144d3d12e706293f020d64bba97da1 *man/BASSStandardgenerator.Rd
+5419fe7b589ec36f026fa57b6b2164b0 *man/BASSplot.Rd
+f6962a56f8d0d149d1910e66c8d07c5b *man/GGmodel.Rd
+38bffe5860ffcf45fd9df47aa77e2cf0 *man/makeinstantanous.Rd
