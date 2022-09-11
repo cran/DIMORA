@@ -1,27 +1,69 @@
 \name{plot.Dimora}
 \alias{plot.Dimora}
-\title{plot method for Dimora}
+\title{Plot method for Dimora models}
 \description{
- Three plots (to be selected with \code{typeog}) are currently available: a plot of fitted values over observed data (typeog=1), a plot of residuals against fitted values (typeog=2), a plot of residuals against time (typeog=3).
+  Plot method for the DIMORA package models.
+}
 
-}
 \usage{
-\method{plot}{Dimora}(x,..., product=1, mode=c("i","c"),typeog=1,oos=c("y","n"),
-                    xlim=NULL,ltycurve=1,lwdcurve=1.5,typecurve="l",colcurve=2)
+\method{plot}{Dimora}(x,..., type = c('all','res','fit'), oos = 0)
 }
+
 \arguments{
-  \item{x}{An object of class \code{Dimora}, i.e.  \code{BASS.generalized}, \code{BASS.standard}, \code{GG.model}.}
-  \item{product}{1 or 2, which indicates whether there are one or two products}
-  \item{mode}{Mode "i" for instantaneous values and "c" for cumulative values}
-  \item{typeog}{Fitted values on observed data \code{typeog=1}, residuals against fitted values \code{typeog=2} and residuals against time \code{typeog=3}, and all the plots with \code{typeog=0}}
-  \item{oos}{"y" or "n" if the out-of-sample plot is desired}
-  \item{xlim}{The limit for the graph, default values is null, if the out-of-sample plot is desired the portion of out-of-sample values may be defined}
-  \item{ltycurve}{"lty" parameter for the fitted values plot (\code{typeog=1}).}
-  \item{lwdcurve}{"lwd" parameter for the fitted values plot (\code{typeog=1}).}
-  \item{typecurve}{"type" parameter for the fitted values plot (\code{typeog=1}).}
-  \item{colcurve}{"col" parameter for the fitted values plot (\code{typeog=1}).}
-  \item{...}{Other graphic parameters.}
+  \item{x}{an object of class \code{Dimora}.}
+
+  \item{type}{specifies the type of plot. Default setting is \code{'all'}:
+  \itemize{ \item{\code{'fit'} returns the cumulative and instantaneous fit of the model;} \item{\code{'res'} returns the 'Residuals VS Time' graphic and the ACF of the residuals of the model;} \item{\code{'all'} returns the two types before combined in an unique graphical window.}}}
+  \item{oos}{positive integer value: number of predictions after the last observed one. If specified, it also determines the xlim for the plots. It only works for univariate models.}
+  \item{...}{other graphics parameters.}
 }
+
 
 \author{
-Zanghi Federico \email{federico.zanghi.11@gmail.com}}
+ \itemize{
+
+   \item{Zanghi Federico: }{\email{federico.zanghi.11@gmail.com}
+    \itemize{
+        \item{\url{https://www.linkedin.com/in/federico-zanghi-75512b165/}}
+        \item{\url{https://github.com/federicozanghi}}
+              }}
+   \item{Savio Andrea: }{\email{svandr97@gmail.com}
+    \itemize{
+       \item{\url{https://www.linkedin.com/in/andrea-savio-51861b191/}}
+             }}
+   \item{Ziliotto Filippo: }{\email{filippo.ziliotto1996@gmail.com}
+    \itemize{
+        \item{\url{https://www.linkedin.com/in/FilippoZiliottoDev/}}
+              }}
+   }
+}
+
+
+\seealso{
+The Dimora models: \code{\link{BM}}, \code{\link{GBM}}, \code{\link{GGM}}, \code{\link{UCRCD}}.
+
+\code{\link{summary.Dimora}} for summaries.
+
+\code{\link{predict.Dimora}} for prediction.
+
+\code{\link{make.instantaneous}} to create instantaneous series from the cumulative one.
+
+
+}
+
+\examples{
+data(DBdimora)
+iphone <- DBdimora$iPhone[7:52]
+Gd <- DBdimora$Gdenmark[1:36]
+Rd <- DBdimora$Rdenmark[13:36]
+
+## Plot with univariate model
+M1 <- BM(iphone,display = FALSE)
+plot.Dimora(M1,type='all',oos = 20)
+
+## Plot with multivariate model
+M8 <- UCRCD(Gd,Rd)
+plot.Dimora(M8,type='fit')
+
+}
+

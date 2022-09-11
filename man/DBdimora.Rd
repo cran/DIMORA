@@ -1,14 +1,10 @@
-\name{make.instantaneous}
-\alias{make.instantaneous}
-\title{Function that transforms your data}
-\description{Function that transforms cumulative data into instantaneous; this function can be useful because all the model functions in this package require the istantaneous data as input.}
+\name{DBdimora}
+\alias{DBdimora}
+\title{Database DIMORA}
+\description{New DIMORA dataset which refers to the examples reported on the help files of the functions.}
 
-\usage{
-make.instantaneous(cumulate.data)
-}
-
-\arguments{
-\item{cumulate.data}{ the cumulative data.}
+\details{
+The database contains six time series with the relative time variables: sales units sold for Apple iPhone and iMac, and the annual consumption, in Exajoule, of Denmark gas and renewables and Australian coal and renewables.
 }
 
 
@@ -34,7 +30,7 @@ make.instantaneous(cumulate.data)
 
 \seealso{
 
-The Dimora models: \code{\link{BM}}, \code{\link{GBM}}, \code{\link{GGM}}, \code{\link{UCRCD}}.
+The Dimora models: \code{\link{BM}}, \code{\link{GBM}}, \code{\link{GGM}}, \code{UCRCD}.
 
 \code{\link{summary.Dimora}} for summaries.
 
@@ -42,10 +38,9 @@ The Dimora models: \code{\link{BM}}, \code{\link{GBM}}, \code{\link{GGM}}, \code
 
 \code{\link{predict.Dimora}} for prediction.
 
+\code{\link{make.instantaneous}} to create instantaneous series from the cumulative one.
+
 }
 
 
-\examples{
-cumulate.data = c(1,2,3,6,12)
-data.inst = make.instantaneous(cumulate.data)
-}
+

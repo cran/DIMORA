@@ -1,20 +1,14 @@
 exportPattern("^[[:alpha:]]+")
-S3method(plot, Dimora)
-S3method(predict, Dimora)
-S3method(summary, Dimora)
 
-
-importFrom("graphics", "curve", "par", "plot")
-importFrom("stats", "optim", "qnorm")
+importFrom("graphics", "curve", "par", "plot", "abline", "legend", "lines", "points")
+importFrom("stats", "optim", "qnorm", "acf", "coef", "optimize", "predict", "residuals",
+               "sd")
+import(minpack.lm)
 import(deSolve)
+import(reshape2)
+import(forecast)
+import(numDeriv)
 
-importFrom("forecast","Arima")
-importFrom("graphics", "abline", "lines")
-importFrom("stats", "acf", "coef", "fitted", "predict", "residuals","sd")
-
-
-
-importFrom("minpack.lm","nls.lm","nls.lm.control")
-import("numDeriv")
-importFrom("reshape2","melt")
-
+S3method(predict, Dimora)
+S3method(plot, Dimora)
+S3method(summary, Dimora)
