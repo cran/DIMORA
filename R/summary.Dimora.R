@@ -21,7 +21,7 @@ summary.Dimora <- function(object,...){
     cat("---\n Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1")
     cat("\n\n")
     cat(" Residual standard error ", sd(object$residuals), " on ", length(object$residuals)-nrow(fitfit), " degrees of freedom\n")
-    cat(" Multiple R-squared:  ",object$Rsquared," Residual squared sum: ", object$RSS)
+    cat(" Multiple R-squared:  ",object$Rsquared," Residual sum of squares: ", object$RSS)
 
     return(invisible(object))
   }
@@ -48,7 +48,7 @@ summary.Dimora <- function(object,...){
     cat("---\n Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1")
     cat("\n\n")
     cat(" Residual standard error ", sd(object$Res_tot), " on ", length(object$Res_tot)-nrow(fitfit), " degrees of freedom\n")
-    cat(" Multiple R-squared:  ",object$Rsquared," Residual squared sum: ", object$RSS)
+    cat(" Multiple R-squared:  ",object$Rsquared," Residual sum of squares: ", object$RSS)
 
     return(invisible(object))
 
