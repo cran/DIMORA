@@ -1,9 +1,10 @@
-7e80890010a741d238a6873617d718e1 *DESCRIPTION
+15db51e3ed0ed4883cf8946388eeea5d *DESCRIPTION
 1a63b5a8a6470861dd0df8bd53066a0c *NAMESPACE
 2e18ac442d4299a0d32b7e1b24d31a7c *R/BM.R
 a84362b92e767aab7b6d01f9f131f691 *R/GBM.R
 2b2ea28ae658519e23802fb41aa4d546 *R/GGM.R
 079fee20f357f8dad28f2d7cb4695370 *R/UCRCD.R
+090d64ce214b348541b903d3505d9557 *R/hello.R
 3af1f47069747ebe34b9b26c27dbf096 *R/makeinstantaneous.R
 185566a705dbeb2ded406a5c9b6f24d7 *R/plot.Dimora.R
 d81059e24b7d067d1f2cdf14c235a161 *R/predict.Dimora.R
@@ -13,8 +14,9 @@ e2b20411a6bdd2955443ce6f5052cb03 *data/DBdimora.rda
 1cd1a9c5d7c7fcdebea6780b693d4ddc *man/DBdimora.Rd
 0a5575d6d57af949ddd90171081e2f28 *man/DIMORA.Rd
 db41bb0ab1697d69b9e9537b86d00ab4 *man/GBM.Rd
-d745028136743c7a7bab6d703c65b08b *man/GGM.Rd
+a5274f7a34ed9b0d62d8a35a4119e101 *man/GGM.Rd
 6f9e1babb2621feef3720d26e76015b4 *man/UCRCD.Rd
+6efd8217f473a7d176807f4025bfee60 *man/hello.Rd
 e2a3390dec4092330cfa5815bca1c98b *man/makeinstantanous.Rd
 f5675bed9b21b45a7118ca0bbc5cb17d *man/plot.Dimora.Rd
 682bcfc8d58777ce4ea1e78237a04f79 *man/predict.Dimora.Rd

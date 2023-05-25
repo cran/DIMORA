@@ -28,7 +28,7 @@ The \code{GGM} function allows to define the parameter \code{m(t)} in two ways:
 
 \itemize{
  \item{use the standard GGM model. Note: define the
-       \code{prelimestimates = c(K, qs, ps, qc, pc)} (see Example 1 below).}
+       \code{prelimestimates = c(K, qc, pc, qs, ps)} (see Example 1 below).}
  \item{define function \code{m(t)} according to modeling needs. Note: function \code{m(t)} must be positive and is essential a c.d.f.; default values for prelimestimates are based on the BM function (see Example 2 below).}}
 }
 
